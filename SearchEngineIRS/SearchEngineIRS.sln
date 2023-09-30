@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchEngineIRS", "SearchEngineIRS\SearchEngineIRS.csproj", "{FE56B63C-0712-43E9-B5A5-1479AC9B92FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE56B63C-0712-43E9-B5A5-1479AC9B92FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE56B63C-0712-43E9-B5A5-1479AC9B92FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE56B63C-0712-43E9-B5A5-1479AC9B92FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE56B63C-0712-43E9-B5A5-1479AC9B92FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A8E5BA75-1E4F-4BA9-943C-8D1BE46BF9EF}
+	EndGlobalSection
+EndGlobal
