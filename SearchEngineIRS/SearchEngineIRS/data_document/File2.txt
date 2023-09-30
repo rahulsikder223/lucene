@@ -1,0 +1,1 @@
+Powerful open source search library for .NET softwares

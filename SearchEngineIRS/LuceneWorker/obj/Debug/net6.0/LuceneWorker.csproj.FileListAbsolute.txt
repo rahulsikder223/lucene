@@ -1,0 +1,12 @@
+D:\Masters\Information Retrieval Systems\Lucene.NET\SearchEngineIRS\LuceneWorker\bin\Debug\net6.0\LuceneWorker.deps.json
+D:\Masters\Information Retrieval Systems\Lucene.NET\SearchEngineIRS\LuceneWorker\bin\Debug\net6.0\LuceneWorker.dll
+D:\Masters\Information Retrieval Systems\Lucene.NET\SearchEngineIRS\LuceneWorker\bin\Debug\net6.0\LuceneWorker.pdb
+D:\Masters\Information Retrieval Systems\Lucene.NET\SearchEngineIRS\LuceneWorker\obj\Debug\net6.0\LuceneWorker.csproj.AssemblyReference.cache
+D:\Masters\Information Retrieval Systems\Lucene.NET\SearchEngineIRS\LuceneWorker\obj\Debug\net6.0\LuceneWorker.GeneratedMSBuildEditorConfig.editorconfig
+D:\Masters\Information Retrieval Systems\Lucene.NET\SearchEngineIRS\LuceneWorker\obj\Debug\net6.0\LuceneWorker.AssemblyInfoInputs.cache
+D:\Masters\Information Retrieval Systems\Lucene.NET\SearchEngineIRS\LuceneWorker\obj\Debug\net6.0\LuceneWorker.AssemblyInfo.cs
+D:\Masters\Information Retrieval Systems\Lucene.NET\SearchEngineIRS\LuceneWorker\obj\Debug\net6.0\LuceneWorker.csproj.CoreCompileInputs.cache
+D:\Masters\Information Retrieval Systems\Lucene.NET\SearchEngineIRS\LuceneWorker\obj\Debug\net6.0\LuceneWorker.dll
+D:\Masters\Information Retrieval Systems\Lucene.NET\SearchEngineIRS\LuceneWorker\obj\Debug\net6.0\refint\LuceneWorker.dll
+D:\Masters\Information Retrieval Systems\Lucene.NET\SearchEngineIRS\LuceneWorker\obj\Debug\net6.0\LuceneWorker.pdb
+D:\Masters\Information Retrieval Systems\Lucene.NET\SearchEngineIRS\LuceneWorker\obj\Debug\net6.0\ref\LuceneWorker.dll
