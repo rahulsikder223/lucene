@@ -23,27 +23,79 @@ namespace LuceneWorker
             LuceneDirectory directory = FSDirectory.Open(indexDocumentPath);
             IndexReader reader = DirectoryReader.Open(directory);
             IndexSearcher searcher = new IndexSearcher(reader);
+            searcher.Similarity = new CustomSimilarity();
             var analyzer = new StandardAnalyzer(luceneVersion);
             QueryParser queryParser = new QueryParser(luceneVersion, "content", analyzer);
-            Query query = queryParser.Parse(searchQuery);
-            TopDocs topDocs = searcher.Search(query, n: 10);
+            queryParser.AllowLeadingWildcard = true; // allowing wildcards...
+            Query phraseQuery = queryParser.CreatePhraseQuery("content", searchQuery);
+            Query booleanQuery = queryParser.CreateBooleanQuery("content", searchQuery);
+            Query minShouldMatchQuery = queryParser.CreateMinShouldMatchQuery("content", searchQuery, 0.2f);
+
+            TopDocs topDocsPhrase = searcher.Search(phraseQuery, n: 10);
+            TopDocs topDocsBoolean = searcher.Search(booleanQuery, n: 10);
+            TopDocs topDocsMinShouldMatch = searcher.Search(minShouldMatchQuery, n: 10);
 
             SimpleHTMLFormatter formatter = new SimpleHTMLFormatter("<b>", "</b>");
-            Highlighter highlighter = new Highlighter(formatter, new QueryScorer(query));
 
-            int numMatchingDocs = topDocs.TotalHits;
+            int matchingDocsPhraseCount = topDocsPhrase.TotalHits;
+            int matchingDocsBooleanCount = topDocsBoolean.TotalHits;
+            int matchingDocsMinShouldMatchCount = topDocsMinShouldMatch.TotalHits;
             List<ExportDTO> output = new List<ExportDTO>();
             //List<string> output = new List<string> { "Total Matching Results: " + topDocs.TotalHits };
 
-            if (numMatchingDocs > 0)
+            if (matchingDocsPhraseCount > 0)
             {
-                foreach (var doc in topDocs.ScoreDocs)
+                foreach (var doc in topDocsPhrase.ScoreDocs)
                 {
                     Document resultDoc = searcher.Doc(doc.Doc);
                     string content = resultDoc.Get("content");
                     using var firstLine = new StringReader(content);
                     string title = firstLine.ReadLine() ?? string.Empty;
+                    Highlighter highlighter = new Highlighter(formatter, new QueryScorer(phraseQuery));
+                    string highlightedContent = highlighter.GetBestFragment(analyzer, "content", content);
 
+                    ExportDTO exportObject = new ExportDTO
+                    {
+                        PaperName = title,
+                        Description = highlightedContent,
+                        Score = doc.Score
+                    };
+
+                    output.Add(exportObject);
+                }
+            }
+
+            if (matchingDocsBooleanCount > 0)
+            {
+                foreach (var doc in topDocsBoolean.ScoreDocs)
+                {
+                    Document resultDoc = searcher.Doc(doc.Doc);
+                    string content = resultDoc.Get("content");
+                    using var firstLine = new StringReader(content);
+                    string title = firstLine.ReadLine() ?? string.Empty;
+                    Highlighter highlighter = new Highlighter(formatter, new QueryScorer(booleanQuery));
+                    string highlightedContent = highlighter.GetBestFragment(analyzer, "content", content);
+
+                    ExportDTO exportObject = new ExportDTO
+                    {
+                        PaperName = title,
+                        Description = highlightedContent,
+                        Score = doc.Score
+                    };
+
+                    output.Add(exportObject);
+                }
+            }
+
+            if (matchingDocsMinShouldMatchCount > 0)
+            {
+                foreach (var doc in topDocsMinShouldMatch.ScoreDocs)
+                {
+                    Document resultDoc = searcher.Doc(doc.Doc);
+                    string content = resultDoc.Get("content");
+                    using var firstLine = new StringReader(content);
+                    string title = firstLine.ReadLine() ?? string.Empty;
+                    Highlighter highlighter = new Highlighter(formatter, new QueryScorer(minShouldMatchQuery));
                     string highlightedContent = highlighter.GetBestFragment(analyzer, "content", content);
 
                     ExportDTO exportObject = new ExportDTO
