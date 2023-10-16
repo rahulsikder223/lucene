@@ -36,6 +36,31 @@
           "lib/net6.0/Lucene.Net.Analysis.Common.dll": {}
         }
       },
+      "Lucene.Net.Highlighter/4.8.0-beta00016": {
+        "type": "package",
+        "dependencies": {
+          "Lucene.Net.Memory": "4.8.0-beta00016",
+          "Lucene.Net.Queries": "4.8.0-beta00016"
+        },
+        "compile": {
+          "lib/net6.0/Lucene.Net.Highlighter.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Lucene.Net.Highlighter.dll": {}
+        }
+      },
+      "Lucene.Net.Memory/4.8.0-beta00016": {
+        "type": "package",
+        "dependencies": {
+          "Lucene.Net": "4.8.0-beta00016"
+        },
+        "compile": {
+          "lib/net6.0/Lucene.Net.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Lucene.Net.Memory.dll": {}
+        }
+      },
       "Lucene.Net.Queries/4.8.0-beta00016": {
         "type": "package",
         "dependencies": {
@@ -187,6 +212,50 @@
         "lucene.net.analysis.common.nuspec"
       ]
     },
+    "Lucene.Net.Highlighter/4.8.0-beta00016": {
+      "sha512": "UegB+fL8pa+rAFvQh+sSJ6s7OS8wSo94ejJak5vPwTalVZqRgqiVC1TbZM91YZYY3ftbgD1VpGRpUHKCKVuuJg==",
+      "type": "package",
+      "path": "lucene.net.highlighter/4.8.0-beta00016",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "NOTICE.txt",
+        "lib/net45/Lucene.Net.Highlighter.dll",
+        "lib/net45/Lucene.Net.Highlighter.xml",
+        "lib/net6.0/Lucene.Net.Highlighter.dll",
+        "lib/net6.0/Lucene.Net.Highlighter.xml",
+        "lib/netstandard2.0/Lucene.Net.Highlighter.dll",
+        "lib/netstandard2.0/Lucene.Net.Highlighter.xml",
+        "lib/netstandard2.1/Lucene.Net.Highlighter.dll",
+        "lib/netstandard2.1/Lucene.Net.Highlighter.xml",
+        "lucene-net-icon-128x128.png",
+        "lucene.net.highlighter.4.8.0-beta00016.nupkg.sha512",
+        "lucene.net.highlighter.nuspec"
+      ]
+    },
+    "Lucene.Net.Memory/4.8.0-beta00016": {
+      "sha512": "ftg9aSJpSR5SW8TiTTofi3IIT/Jgc6Ytn53rsemIiZvlXWEggMcFJo8gq2GwBuP1UPgEdHjKQw64Fib6FL/g2w==",
+      "type": "package",
+      "path": "lucene.net.memory/4.8.0-beta00016",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "NOTICE.txt",
+        "lib/net45/Lucene.Net.Memory.dll",
+        "lib/net45/Lucene.Net.Memory.xml",
+        "lib/net6.0/Lucene.Net.Memory.dll",
+        "lib/net6.0/Lucene.Net.Memory.xml",
+        "lib/netstandard2.0/Lucene.Net.Memory.dll",
+        "lib/netstandard2.0/Lucene.Net.Memory.xml",
+        "lib/netstandard2.1/Lucene.Net.Memory.dll",
+        "lib/netstandard2.1/Lucene.Net.Memory.xml",
+        "lucene-net-icon-128x128.png",
+        "lucene.net.memory.4.8.0-beta00016.nupkg.sha512",
+        "lucene.net.memory.nuspec"
+      ]
+    },
     "Lucene.Net.Queries/4.8.0-beta00016": {
       "sha512": "XBzdMDlan68V2ZlhAlP8Fd+Xx2Le8ec7cEN1kFF45Sipa3Q8L/tilJfwS9VHvMTvGkwPM/yj62eGbfGBgIMR8Q==",
       "type": "package",
@@ -307,6 +376,7 @@
     "net6.0": [
       "Lucene.Net >= 4.8.0-beta00016",
       "Lucene.Net.Analysis.Common >= 4.8.0-beta00016",
+      "Lucene.Net.Highlighter >= 4.8.0-beta00016",
       "Lucene.Net.QueryParser >= 4.8.0-beta00016"
     ]
   },
@@ -318,11 +388,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Masters\\Information Retrieval Systems\\Lucene.NET\\SearchEngineIRS\\LuceneWorker\\LuceneWorker.csproj",
+      "projectUniqueName": "D:\\Masters\\Information Retrieval Systems\\Lucene3\\lucene\\SearchEngineIRS\\LuceneWorker\\LuceneWorker.csproj",
       "projectName": "LuceneWorker",
-      "projectPath": "D:\\Masters\\Information Retrieval Systems\\Lucene.NET\\SearchEngineIRS\\LuceneWorker\\LuceneWorker.csproj",
+      "projectPath": "D:\\Masters\\Information Retrieval Systems\\Lucene3\\lucene\\SearchEngineIRS\\LuceneWorker\\LuceneWorker.csproj",
       "packagesPath": "C:\\Users\\rahul\\.nuget\\packages\\",
-      "outputPath": "D:\\Masters\\Information Retrieval Systems\\Lucene.NET\\SearchEngineIRS\\LuceneWorker\\obj\\",
+      "outputPath": "D:\\Masters\\Information Retrieval Systems\\Lucene3\\lucene\\SearchEngineIRS\\LuceneWorker\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -361,6 +431,10 @@
             "version": "[4.8.0-beta00016, )"
           },
           "Lucene.Net.Analysis.Common": {
+            "target": "Package",
+            "version": "[4.8.0-beta00016, )"
+          },
+          "Lucene.Net.Highlighter": {
             "target": "Package",
             "version": "[4.8.0-beta00016, )"
           },

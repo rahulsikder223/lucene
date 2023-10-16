@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Masters\\Information Retrieval Systems\\Lucene.NET\\SearchEngineIRS\\SearchEngineIRS\\SearchEngineIRS.csproj": {}
+    "D:\\Masters\\Information Retrieval Systems\\Lucene3\\lucene\\SearchEngineIRS\\SearchEngineIRS\\SearchEngineIRS.csproj": {}
   },
   "projects": {
-    "D:\\Masters\\Information Retrieval Systems\\Lucene.NET\\SearchEngineIRS\\LuceneWorker\\LuceneWorker.csproj": {
+    "D:\\Masters\\Information Retrieval Systems\\Lucene3\\lucene\\SearchEngineIRS\\LuceneWorker\\LuceneWorker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Masters\\Information Retrieval Systems\\Lucene.NET\\SearchEngineIRS\\LuceneWorker\\LuceneWorker.csproj",
+        "projectUniqueName": "D:\\Masters\\Information Retrieval Systems\\Lucene3\\lucene\\SearchEngineIRS\\LuceneWorker\\LuceneWorker.csproj",
         "projectName": "LuceneWorker",
-        "projectPath": "D:\\Masters\\Information Retrieval Systems\\Lucene.NET\\SearchEngineIRS\\LuceneWorker\\LuceneWorker.csproj",
+        "projectPath": "D:\\Masters\\Information Retrieval Systems\\Lucene3\\lucene\\SearchEngineIRS\\LuceneWorker\\LuceneWorker.csproj",
         "packagesPath": "C:\\Users\\rahul\\.nuget\\packages\\",
-        "outputPath": "D:\\Masters\\Information Retrieval Systems\\Lucene.NET\\SearchEngineIRS\\LuceneWorker\\obj\\",
+        "outputPath": "D:\\Masters\\Information Retrieval Systems\\Lucene3\\lucene\\SearchEngineIRS\\LuceneWorker\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -53,6 +53,10 @@
               "target": "Package",
               "version": "[4.8.0-beta00016, )"
             },
+            "Lucene.Net.Highlighter": {
+              "target": "Package",
+              "version": "[4.8.0-beta00016, )"
+            },
             "Lucene.Net.QueryParser": {
               "target": "Package",
               "version": "[4.8.0-beta00016, )"
@@ -77,14 +81,14 @@
         }
       }
     },
-    "D:\\Masters\\Information Retrieval Systems\\Lucene.NET\\SearchEngineIRS\\SearchEngineIRS\\SearchEngineIRS.csproj": {
+    "D:\\Masters\\Information Retrieval Systems\\Lucene3\\lucene\\SearchEngineIRS\\SearchEngineIRS\\SearchEngineIRS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Masters\\Information Retrieval Systems\\Lucene.NET\\SearchEngineIRS\\SearchEngineIRS\\SearchEngineIRS.csproj",
+        "projectUniqueName": "D:\\Masters\\Information Retrieval Systems\\Lucene3\\lucene\\SearchEngineIRS\\SearchEngineIRS\\SearchEngineIRS.csproj",
         "projectName": "SearchEngineIRS",
-        "projectPath": "D:\\Masters\\Information Retrieval Systems\\Lucene.NET\\SearchEngineIRS\\SearchEngineIRS\\SearchEngineIRS.csproj",
+        "projectPath": "D:\\Masters\\Information Retrieval Systems\\Lucene3\\lucene\\SearchEngineIRS\\SearchEngineIRS\\SearchEngineIRS.csproj",
         "packagesPath": "C:\\Users\\rahul\\.nuget\\packages\\",
-        "outputPath": "D:\\Masters\\Information Retrieval Systems\\Lucene.NET\\SearchEngineIRS\\SearchEngineIRS\\obj\\",
+        "outputPath": "D:\\Masters\\Information Retrieval Systems\\Lucene3\\lucene\\SearchEngineIRS\\SearchEngineIRS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -106,8 +110,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Masters\\Information Retrieval Systems\\Lucene.NET\\SearchEngineIRS\\LuceneWorker\\LuceneWorker.csproj": {
-                "projectPath": "D:\\Masters\\Information Retrieval Systems\\Lucene.NET\\SearchEngineIRS\\LuceneWorker\\LuceneWorker.csproj"
+              "D:\\Masters\\Information Retrieval Systems\\Lucene3\\lucene\\SearchEngineIRS\\LuceneWorker\\LuceneWorker.csproj": {
+                "projectPath": "D:\\Masters\\Information Retrieval Systems\\Lucene3\\lucene\\SearchEngineIRS\\LuceneWorker\\LuceneWorker.csproj"
               }
             }
           }

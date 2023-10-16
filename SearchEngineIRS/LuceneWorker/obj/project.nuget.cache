@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "2+Lhrj8s/HjVhLSTN2XJfptsb9lSvQpxvFA0kHnAV1DHq+Yd4cG8QA+UEF+OOkwCrMsgRDxOEtqt1mPmQKxv2g==",
+  "dgSpecHash": "IoB0fcEAKJn8G9XE4xJhrKKffT58wwjtD+Aonfzcfwy1mgDu+SuWhVS6J8A0ZFuN4XWSeq35TeIcPwSFMRY0DQ==",
   "success": true,
-  "projectFilePath": "D:\\Masters\\Information Retrieval Systems\\Lucene.NET\\SearchEngineIRS\\LuceneWorker\\LuceneWorker.csproj",
+  "projectFilePath": "D:\\Masters\\Information Retrieval Systems\\Lucene3\\lucene\\SearchEngineIRS\\LuceneWorker\\LuceneWorker.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rahul\\.nuget\\packages\\j2n\\2.0.0\\j2n.2.0.0.nupkg.sha512",
     "C:\\Users\\rahul\\.nuget\\packages\\lucene.net\\4.8.0-beta00016\\lucene.net.4.8.0-beta00016.nupkg.sha512",
     "C:\\Users\\rahul\\.nuget\\packages\\lucene.net.analysis.common\\4.8.0-beta00016\\lucene.net.analysis.common.4.8.0-beta00016.nupkg.sha512",
+    "C:\\Users\\rahul\\.nuget\\packages\\lucene.net.highlighter\\4.8.0-beta00016\\lucene.net.highlighter.4.8.0-beta00016.nupkg.sha512",
+    "C:\\Users\\rahul\\.nuget\\packages\\lucene.net.memory\\4.8.0-beta00016\\lucene.net.memory.4.8.0-beta00016.nupkg.sha512",
     "C:\\Users\\rahul\\.nuget\\packages\\lucene.net.queries\\4.8.0-beta00016\\lucene.net.queries.4.8.0-beta00016.nupkg.sha512",
     "C:\\Users\\rahul\\.nuget\\packages\\lucene.net.queryparser\\4.8.0-beta00016\\lucene.net.queryparser.4.8.0-beta00016.nupkg.sha512",
     "C:\\Users\\rahul\\.nuget\\packages\\lucene.net.sandbox\\4.8.0-beta00016\\lucene.net.sandbox.4.8.0-beta00016.nupkg.sha512",

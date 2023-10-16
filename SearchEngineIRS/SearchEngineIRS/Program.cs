@@ -15,7 +15,7 @@ if (app.Environment.IsDevelopment())
 }
 
 WriteIndex writer = new WriteIndex();
-writer.Write();
+//writer.Write();
 ReadIndex reader = new ReadIndex();
 
 app.MapGet("/search", ([FromUri] string query) =>

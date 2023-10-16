@@ -19,8 +19,7 @@ namespace LuceneWorker
             string indexDirectoryPath = Path.Combine(Environment.CurrentDirectory, Constants.IndexDirectory);
             string documentFilePath = Path.Combine(Environment.CurrentDirectory, Constants.DatasetDirectory);
 
-            using (LuceneDirectory indexDir = FSDirectory.Open(indexDirectoryPath))
-            {
+            using (LuceneDirectory indexDir = FSDirectory.Open(indexDirectoryPath)) {
                 Analyzer standardAnalyzer = new StandardAnalyzer(luceneVersion);
                 IndexWriterConfig indexConfig = new IndexWriterConfig(luceneVersion, standardAnalyzer);
                 indexConfig.OpenMode = OpenMode.CREATE;

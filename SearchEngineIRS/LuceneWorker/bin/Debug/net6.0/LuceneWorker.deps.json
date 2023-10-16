@@ -10,6 +10,7 @@
         "dependencies": {
           "Lucene.Net": "4.8.0-beta00016",
           "Lucene.Net.Analysis.Common": "4.8.0-beta00016",
+          "Lucene.Net.Highlighter": "4.8.0-beta00016",
           "Lucene.Net.QueryParser": "4.8.0-beta00016"
         },
         "runtime": {
@@ -42,6 +43,29 @@
         },
         "runtime": {
           "lib/net6.0/Lucene.Net.Analysis.Common.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.8.0.0"
+          }
+        }
+      },
+      "Lucene.Net.Highlighter/4.8.0-beta00016": {
+        "dependencies": {
+          "Lucene.Net.Memory": "4.8.0-beta00016",
+          "Lucene.Net.Queries": "4.8.0-beta00016"
+        },
+        "runtime": {
+          "lib/net6.0/Lucene.Net.Highlighter.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.8.0.0"
+          }
+        }
+      },
+      "Lucene.Net.Memory/4.8.0-beta00016": {
+        "dependencies": {
+          "Lucene.Net": "4.8.0-beta00016"
+        },
+        "runtime": {
+          "lib/net6.0/Lucene.Net.Memory.dll": {
             "assemblyVersion": "4.0.0.0",
             "fileVersion": "4.8.0.0"
           }
@@ -133,6 +157,20 @@
       "sha512": "sha512-7pjEAIliWdih6E3I0hCE8hKcKKRx1LLzeQBslF1fhvzE1Sal4NyHd8RFJHV1Z+yHlBw4gCyyVIDZADiIoyqwxg==",
       "path": "lucene.net.analysis.common/4.8.0-beta00016",
       "hashPath": "lucene.net.analysis.common.4.8.0-beta00016.nupkg.sha512"
+    },
+    "Lucene.Net.Highlighter/4.8.0-beta00016": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UegB+fL8pa+rAFvQh+sSJ6s7OS8wSo94ejJak5vPwTalVZqRgqiVC1TbZM91YZYY3ftbgD1VpGRpUHKCKVuuJg==",
+      "path": "lucene.net.highlighter/4.8.0-beta00016",
+      "hashPath": "lucene.net.highlighter.4.8.0-beta00016.nupkg.sha512"
+    },
+    "Lucene.Net.Memory/4.8.0-beta00016": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ftg9aSJpSR5SW8TiTTofi3IIT/Jgc6Ytn53rsemIiZvlXWEggMcFJo8gq2GwBuP1UPgEdHjKQw64Fib6FL/g2w==",
+      "path": "lucene.net.memory/4.8.0-beta00016",
+      "hashPath": "lucene.net.memory.4.8.0-beta00016.nupkg.sha512"
     },
     "Lucene.Net.Queries/4.8.0-beta00016": {
       "type": "package",
