@@ -16,13 +16,11 @@ namespace LuceneWorker
 
         public void Write()
         {
-            string indexDirectoryName = "data_index";
-            string documentDirectory = "data_document";
+            string indexDirectoryPath = Path.Combine(Environment.CurrentDirectory, Constants.IndexDirectory);
+            string documentFilePath = Path.Combine(Environment.CurrentDirectory, Constants.DatasetDirectory);
 
-            string indexDirectoryPath = Path.Combine(Environment.CurrentDirectory, indexDirectoryName);
-            string documentFilePath = Path.Combine(Environment.CurrentDirectory, documentDirectory);
-
-            using (LuceneDirectory indexDir = FSDirectory.Open(indexDirectoryPath)) {
+            using (LuceneDirectory indexDir = FSDirectory.Open(indexDirectoryPath))
+            {
                 Analyzer standardAnalyzer = new StandardAnalyzer(luceneVersion);
                 IndexWriterConfig indexConfig = new IndexWriterConfig(luceneVersion, standardAnalyzer);
                 indexConfig.OpenMode = OpenMode.CREATE;
@@ -39,8 +37,8 @@ namespace LuceneWorker
                 foreach (string file in System.IO.Directory.GetFiles(startDirectory))
                 {
                     Document document = new Document();
-                    document.Add(new StringField("path", file, Store.YES));
-                    document.Add(new TextField("content", File.ReadAllText(file, Encoding.UTF8), Store.YES));
+                    document.Add(new StringField(Constants.SearchContentPath, file, Store.YES));
+                    document.Add(new TextField(Constants.SearchContentPath, File.ReadAllText(file, Encoding.UTF8), Store.YES));
                     writer.AddDocument(document);
                 }
 
